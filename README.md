@@ -7,7 +7,9 @@
  <BR/>
   
   
-  
+  AFTER STARTING APACHE SERVER
+ 
+ 
  *TYPE URL TO CHROME : http://localhost/todoproject/index.html.
  
   
