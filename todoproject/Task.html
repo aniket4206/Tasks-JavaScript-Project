@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Add Tasks</title>
+        <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tasks</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <section class="todo-outer">
+            <div class="container">
+              <div class="row justify-content-md-center">
+                <div class="col-sm-12 col-md-8"><br><br>
+                  <center><h1>Add Your Tasks</h1></center>
+                  <div class="todo-inner">
+                    <div class="form-row">
+                      <div class="col-8 mr-sm-2">
+                        <input type="text" class="form-control" placeholder="Enter your task" id="addtaskinput" />
+                        <input type="hidden" id="saveindex">
+                      </div>
+                      <button type="button" class="btn btn-outline-success" id="addtaskbtn">
+                        Add Task
+                      </button>
+                      <button type="button" class="btn btn-success mr-sm-2" id="savetaskbtn" style="display: none;">
+                        Save Task
+                      </button>
+                      &nbsp;&nbsp;<button type="button" id="deleteallbtn" class="btn btn-outline-danger">
+                        Delete All
+                      </button>
+                    </div>
+                    <div class="to-do-output">
+                      <table class="table table-striped mt-3 mb-0" id="addedtasklist">
+                        
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+         <center><a href="http://localhost/todoproject/index.html" class="btn btn-primary active" role="button" aria-pressed="true">Home Page</a>
+         </center> 
+          <script src="js/main.js"></script>
+    </body>
+</html>

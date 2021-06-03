@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tasks</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="mb-2 bg-success text-darks">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <nav class="navbar justify-content-between">
+            <a class="navbar-brand">Tasks</a>
+            <form class="form-inline">
+             
+                <a href="http://localhost/todoproject/Task.html"><button type="button" class="btn btn-primary" id="addtaskbtn">
+                  Add Task
+                </button></a>
+            </form>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="todo-outer">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-sm-12 col-md-8">
+          &nbsp;<h1><center>Your Tasks</center></h1>
+          <div class="todo-inner">
+            <div class="form-row">
+              <div class="form-inline">
+               <input type="text" class="form-control mr-sm-1" placeholder="Edit Task" id="addtaskinput" />
+                <input type="hidden" id="saveindex">
+              </div>
+              
+              &nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-success mr-sm-2" id="savetaskbtn" style="display: none;">
+                Save Task
+              </button>
+              <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button type="button" id="deleteallbtn" class="btn btn-outline-danger">
+
+                Delete All
+              </button>
+            </div>
+            <div class="to-do-output">
+              <table class="table table-striped mt-3 mb-0" id="addedtasklist">
+                
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
